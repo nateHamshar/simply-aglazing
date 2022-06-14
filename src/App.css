@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.landing{
+    background-color:white;
+    padding-left: 15%;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.nameFirst{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8rem;
+    position: absolute;
+    bottom: 22.5%;
+    font-weight: 300;
+    color: orange
+}
+.nameSecond{
+    font-family: 'Poppins', sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+.slogan{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 5%;
+    left:50%
+}
+.border{
+    height: 2rem;
+    background-color: rgba(0, 0, 0, .95);
+}
+.images{
+    width: 100%;
+}
+.contentRight{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 5%;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.imgRight{
+    width: 20%;
+    border: .125rem solid orange;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.21);
+    margin-right: 15%;
+    display: flex;
+}
+.rightText{
+    margin-right: 32.5%;
+    font-size: 6rem;
+    position: absolute;
+    top: 20%;
+    color: orange;
+    text-shadow: 4px 4px black;
+}
+
+.imgLeft{
+    width: 20%;
+    border: .125rem solid orange;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.21);
+    margin-left: 15%;
+    display: flex;
+}
+.leftText{
+    margin-left: 32.5%;
+    font-size: 6rem;
+    position: absolute;
+    top: 20%;
+    color: orange;
+    text-shadow: -4px 4px black;
+}
+.contentLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5%;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+@media (max-width:1600px){
+    .landing{
+        height: 30em;
+    }
+    .nameFirst{
+        font-size: 6rem;
+        bottom: 22.5%;
+    }
+    .nameSecond{
+        font-size: 6rem;
+    }
+    .slogan{
+        font-size: 3rem;
+    }
+    .rightText,.leftText{
+        font-size: 4.5rem;
+    }
+    .imgLeft,.imgRight{
+        width: 20%;
+    }
+}
+@media (max-width:1200px){
+    .landing{
+        height: 20em;
+    }
+    .nameFirst{
+        font-size: 4rem;
+        bottom: 22.5%;
+    }
+    .nameSecond{
+        font-size: 4rem;
+    }
+    .slogan{
+        font-size: 3rem;
+        bottom: 2.5%;
+    }
+    .rightText,.leftText{
+        font-size: 3rem;
+    }
+    .imgLeft,.imgRight{
+        width: 15%;
+    }
+    .leftText{
+        margin-left: 30%;
+        position: absolute;
+        top: 20%;
+        color: orange;
+        text-shadow: -2px 2px black;
+    }
+    .rightText{
+        margin-right: 30%;
+        position: absolute;
+        top: 20%;
+        color: orange;
+        text-shadow: 2px 2px black;
+    }
+}
+@media (max-width:850px){
+    .landing{
+        height: 15em;
+    }
+    .nameFirst{
+        font-size: 3rem;
+        bottom: 22.5%;
+    }
+    .nameSecond{
+        font-size: 3rem;
+    }
+    .slogan{
+        font-size: 2rem;
+        bottom: 1.5%;
+    }
+    .rightText,.leftText{
+        font-size: 2rem;
+    }
+    .imgLeft,.imgRight{
+        width: 15%;
+    }
+    .leftText{
+        margin-left: 30%;
+        position: absolute;
+        top: 20%;
+        color: orange;
+        text-shadow: -2px 2px black;
+    }
+    .rightText{
+        margin-right: 30%;
+        position: absolute;
+        top: 20%;
+        color: orange;
+        text-shadow: 2px 2px black;
+    }
+}
+
+@media (max-width:600px){
+    .landing{
+        height: 10em;
+    }
+    .nameFirst{
+        font-size: 2rem;
+        bottom: 22.5%;
+    }
+    .nameSecond{
+        font-size: 2rem;
+    }
+    .slogan{
+        font-size: 1.5rem;
+        bottom: 1.5%;
+    }
+    .rightText,.leftText{
+        font-size: 1.5rem;
+    }
+    .imgLeft,.imgRight{
+        width: 15%;
+    }
+    .leftText{
+        margin-left: 30%;
+        position: absolute;
+        top: 20%;
+        color: orange;
+        text-shadow: -2px 1px black;
+    }
+    .rightText{
+        margin-right: 30%;
+        position: absolute;
+        top: 20%;
+        color: orange;
+        text-shadow: 2px 1px black;
+    }
+}
+
+@media (max-width:429px){
+    .landing{
+        padding: 0;
+    }
+   .nameFirst,.nameSecond {
+    left:5%
+    }
+    .slogan{
+        font-size: 1.25rem
+    }
+}
