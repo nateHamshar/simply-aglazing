@@ -123,7 +123,6 @@
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    loading: lazy;
 }
 span{
  color: var(--theme);
