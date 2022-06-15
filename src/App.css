@@ -3,12 +3,14 @@
     --theme: rgb(227, 154, 166);
 }
 .landing{
-    background-color:white;
+    background-color:WHITE;
     padding-left: 15%;
     height: 40em;
     display: flex;
     flex-direction: column;
     position: relative;
+    transform-origin: bottom left;
+    animation: initialRender 800ms forwards;
 }
 .nameFirst{
     font-family: 'Poppins', sans-serif;
@@ -36,6 +38,7 @@
     height: 2rem;
     background-color: rgba(0, 0, 0, .95);
     border-bottom: 1px solid var(--theme);
+    animation: lineFade 1600ms forwards;
 }
 .images{
     width: 100%;
@@ -51,12 +54,30 @@
 }
 .imgRight{
     width: 20%;
-    border: .125rem solid var(--theme);
+    border: .125rem solid black;
     border-radius: 2%;
     overflow: hidden;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.21);
     margin-right: 15%;
     display: flex;
+}
+.overlayRight{
+    width: 20%;
+    border-radius: 2%;
+    aspect-ratio: 1;
+    position: absolute;
+    margin-right: 25%;
+    top:35%;
+    background:rgba(0, 0, 0, .75);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding-left:1rem;
+    padding-right: 1rem;
 }
 .rightText{
     margin-right: 32.5%;
@@ -69,20 +90,38 @@
 
 .imgLeft{
     width: 20%;
-    border: .125rem solid var(--theme);
+    border: .125rem solid black;
     border-radius: 2%;
     overflow: hidden;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.21);
     margin-left: 15%;
     display: flex;
 }
-.leftText{
-    margin-left: 32.5%;
-    font-size: 6rem;
+.overlayLeft{
+    width: 20%;
+    border-radius: 2%;
+    aspect-ratio: 1;
     position: absolute;
-    top: 20%;
+    margin-left: 25%;
+    top:35%;
+    background:rgba(0, 0, 0, .75);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding-left:1rem;
+    padding-right: 1rem;
+}
+.overlayLink{
     color: var(--theme);
-    text-shadow: -4px 4px black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    height: auto;
+    margin: 0;
+    font-weight: bold;
 }
 .contentLeft{
     display: flex;
@@ -92,11 +131,13 @@
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    loading: lazy;
 }
 span{
  color: var(--theme);
  font-size: inherit;
 }
+
 
 @media (max-width:1600px){
     .landing{
@@ -111,9 +152,6 @@ span{
     }
     .slogan{
         font-size: 3rem;
-    }
-    .rightText,.leftText{
-        font-size: 4.5rem;
     }
     .imgLeft,.imgRight{
         width: 20%;
@@ -134,25 +172,8 @@ span{
         font-size: 3rem;
         bottom: 2.5%;
     }
-    .rightText,.leftText{
-        font-size: 3rem;
-    }
     .imgLeft,.imgRight{
         width: 15%;
-    }
-    .leftText{
-        margin-left: 30%;
-        position: absolute;
-        top: 20%;
-        color: var(--theme);
-        text-shadow: -2px 2px black;
-    }
-    .rightText{
-        margin-right: 30%;
-        position: absolute;
-        top: 20%;
-        color: var(--theme);
-        text-shadow: 2px 2px black;
     }
 }
 @media (max-width:850px){
@@ -170,25 +191,8 @@ span{
         font-size: 2rem;
         bottom: 1.5%;
     }
-    .rightText,.leftText{
-        font-size: 2rem;
-    }
     .imgLeft,.imgRight{
         width: 15%;
-    }
-    .leftText{
-        margin-left: 30%;
-        position: absolute;
-        top: 20%;
-        color: var(--theme);
-        text-shadow: -2px 2px black;
-    }
-    .rightText{
-        margin-right: 30%;
-        position: absolute;
-        top: 20%;
-        color: var(--theme);
-        text-shadow: 2px 2px black;
     }
 }
 
@@ -207,25 +211,8 @@ span{
         font-size: 1.5rem;
         bottom: 1.5%;
     }
-    .rightText,.leftText{
-        font-size: 1.5rem;
-    }
     .imgLeft,.imgRight{
         width: 15%;
-    }
-    .leftText{
-        margin-left: 30%;
-        position: absolute;
-        top: 20%;
-        color: var(--theme);
-        text-shadow: -2px 1px black;
-    }
-    .rightText{
-        margin-right: 30%;
-        position: absolute;
-        top: 20%;
-        color: var(--theme);
-        text-shadow: 2px 1px black;
     }
 }
 
@@ -239,4 +226,44 @@ span{
     .slogan{
         font-size: 1.25rem
     }
+}
+
+@keyframes initialRender {
+    0%{
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 100;
+    }
+}
+
+@keyframes lineFade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.App:last-child{
+    margin-bottom: 20%;
 }
