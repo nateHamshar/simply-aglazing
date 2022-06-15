@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+:root{
+    --theme: rgb(227, 154, 166);
+}
 .landing{
     background-color:white;
     padding-left: 15%;
@@ -14,7 +16,7 @@
     position: absolute;
     bottom: 22.5%;
     font-weight: 300;
-    color: orange
+    color: var(--theme);
 }
 .nameSecond{
     font-family: 'Poppins', sans-serif;
@@ -33,6 +35,7 @@
 .border{
     height: 2rem;
     background-color: rgba(0, 0, 0, .95);
+    border-bottom: 1px solid var(--theme);
 }
 .images{
     width: 100%;
@@ -48,7 +51,7 @@
 }
 .imgRight{
     width: 20%;
-    border: .125rem solid orange;
+    border: .125rem solid var(--theme);
     border-radius: 2%;
     overflow: hidden;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.21);
@@ -60,13 +63,13 @@
     font-size: 6rem;
     position: absolute;
     top: 20%;
-    color: orange;
+    color: var(--theme);
     text-shadow: 4px 4px black;
 }
 
 .imgLeft{
     width: 20%;
-    border: .125rem solid orange;
+    border: .125rem solid var(--theme);
     border-radius: 2%;
     overflow: hidden;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.21);
@@ -78,7 +81,7 @@
     font-size: 6rem;
     position: absolute;
     top: 20%;
-    color: orange;
+    color: var(--theme);
     text-shadow: -4px 4px black;
 }
 .contentLeft{
@@ -137,14 +140,14 @@
         margin-left: 30%;
         position: absolute;
         top: 20%;
-        color: orange;
+        color: var(--theme);
         text-shadow: -2px 2px black;
     }
     .rightText{
         margin-right: 30%;
         position: absolute;
         top: 20%;
-        color: orange;
+        color: var(--theme);
         text-shadow: 2px 2px black;
     }
 }
@@ -173,14 +176,14 @@
         margin-left: 30%;
         position: absolute;
         top: 20%;
-        color: orange;
+        color: var(--theme);
         text-shadow: -2px 2px black;
     }
     .rightText{
         margin-right: 30%;
         position: absolute;
         top: 20%;
-        color: orange;
+        color: var(--theme);
         text-shadow: 2px 2px black;
     }
 }
@@ -210,14 +213,14 @@
         margin-left: 30%;
         position: absolute;
         top: 20%;
-        color: orange;
+        color: var(--theme);
         text-shadow: -2px 1px black;
     }
     .rightText{
         margin-right: 30%;
         position: absolute;
         top: 20%;
-        color: orange;
+        color: var(--theme);
         text-shadow: 2px 1px black;
     }
 }
