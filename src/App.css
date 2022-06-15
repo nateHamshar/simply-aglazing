@@ -51,9 +51,10 @@
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    margin: 10% 0;
 }
 .imgRight{
-    width: 20%;
+    width: 35%;
     border: .125rem solid black;
     border-radius: 2%;
     overflow: hidden;
@@ -62,13 +63,13 @@
     display: flex;
 }
 .overlayRight{
-    width: 20%;
+    width: 35%;
     border-radius: 2%;
     aspect-ratio: 1;
     position: absolute;
     margin-right: 25%;
     top:35%;
-    background:rgba(0, 0, 0, .75);
+    background:rgba(0, 0, 0, 0.6);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -81,7 +82,7 @@
 }
 
 .imgLeft{
-    width: 20%;
+    width: 35%;
     border: .125rem solid black;
     border-radius: 2%;
     overflow: hidden;
@@ -90,13 +91,13 @@
     display: flex;
 }
 .overlayLeft{
-    width: 20%;
+    width: 35%;
     border-radius: 2%;
     aspect-ratio: 1;
     position: absolute;
     margin-left: 25%;
     top:35%;
-    background:rgba(0, 0, 0, .75);
+    background:rgba(0, 0, 0, 0.6);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -110,7 +111,6 @@
 .overlayLink{
     color: var(--theme);
     font-family: 'Poppins', sans-serif;
-    text-decoration: none;
     height: auto;
     margin: 0;
     font-weight: bold;
@@ -144,9 +144,7 @@ span{
     .slogan{
         font-size: 3rem;
     }
-    .imgLeft,.imgRight, .overlayLeft,.overlayRight{
-        width: 20%;
-    }
+   
 }
 @media (max-width:1200px){
     .landing{
@@ -163,11 +161,8 @@ span{
         font-size: 3rem;
         bottom: 2.5%;
     }
-    .imgLeft,.imgRight, .overlayLeft,.overlayRight{
-        width: 15%;
-    }
     .overlayLeft,.overlayRight{
-        font-size: .8rem;
+        font-size: 1.5rem;
     }
 }
 @media (max-width:850px){
@@ -185,11 +180,8 @@ span{
         font-size: 2rem;
         bottom: 1.5%;
     }
-    .imgLeft,.imgRight, .overlayLeft,.overlayRight{
-        width: 15%;
-    }
     .overlayLeft,.overlayRight{
-        font-size: .55rem;
+        font-size: 1rem;
     }
 }
 
@@ -208,11 +200,8 @@ span{
         font-size: 1.5rem;
         bottom: 1.5%;
     }
-    .imgLeft,.imgRight, .overlayLeft, .overlayRight{
-        width: 15%;
-    }
     .overlayLeft,.overlayRight{
-        font-size: .4rem;
+        font-size: 1rem;
     }
 }
 
@@ -227,7 +216,7 @@ span{
         font-size: 1.25rem
     }
     .overlayLeft,.overlayRight{
-        font-size: .3rem;
+        font-size: .5rem;
     }
 }
 
