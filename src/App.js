@@ -36,7 +36,7 @@ function App() {
         </div>
         <div className="overlayRight">
           <h1>You've Got Options</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum soluta quibusdam necessitatibus similique nam.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           <a href="/" className="overlayLink">Look at our menu!</a>
         </div>
       </div>
@@ -58,7 +58,7 @@ function App() {
         </div>
         <div className="overlayRight">
           <h1>Yes, We Cater</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium architecto, aperiam illo vitae magnam!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, non?</p>
           <a href="/" className="overlayLink">Got to Catering</a>
         </div>
       </div>
