@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nateHamshar/simply-aglazing/static/css/main.5b2eb0a2.css",
-    "main.js": "/nateHamshar/simply-aglazing/static/js/main.499dafb8.js",
-    "static/media/cookieMonster.jpg": "/nateHamshar/simply-aglazing/static/media/cookieMonster.fdb773e6c2c457f96591.jpg",
-    "static/media/germanChoc.jpg": "/nateHamshar/simply-aglazing/static/media/germanChoc.696a3ed854cdc06037a3.jpg",
-    "static/media/blueLemon.jpg": "/nateHamshar/simply-aglazing/static/media/blueLemon.366ad78dd6c721335317.jpg",
-    "index.html": "/nateHamshar/simply-aglazing/index.html",
-    "main.5b2eb0a2.css.map": "/nateHamshar/simply-aglazing/static/css/main.5b2eb0a2.css.map",
-    "main.499dafb8.js.map": "/nateHamshar/simply-aglazing/static/js/main.499dafb8.js.map"
+    "main.css": "/simply-aglazing/static/css/main.a74b0f2c.css",
+    "main.js": "/simply-aglazing/static/js/main.94dda73d.js",
+    "static/media/cookieMonster.jpg": "/simply-aglazing/static/media/cookieMonster.fdb773e6c2c457f96591.jpg",
+    "static/media/germanChoc.jpg": "/simply-aglazing/static/media/germanChoc.696a3ed854cdc06037a3.jpg",
+    "static/media/blueLemon.jpg": "/simply-aglazing/static/media/blueLemon.366ad78dd6c721335317.jpg",
+    "index.html": "/simply-aglazing/index.html",
+    "main.a74b0f2c.css.map": "/simply-aglazing/static/css/main.a74b0f2c.css.map",
+    "main.94dda73d.js.map": "/simply-aglazing/static/js/main.94dda73d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b2eb0a2.css",
-    "static/js/main.499dafb8.js"
+    "static/css/main.a74b0f2c.css",
+    "static/js/main.94dda73d.js"
   ]
 }
