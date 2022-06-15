@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/simply-aglazing/static/css/main.a74b0f2c.css",
-    "main.js": "/simply-aglazing/static/js/main.94dda73d.js",
+    "main.css": "/simply-aglazing/static/css/main.34a55b21.css",
+    "main.js": "/simply-aglazing/static/js/main.66d824ef.js",
     "static/media/cookieMonster.jpg": "/simply-aglazing/static/media/cookieMonster.fdb773e6c2c457f96591.jpg",
     "static/media/germanChoc.jpg": "/simply-aglazing/static/media/germanChoc.696a3ed854cdc06037a3.jpg",
     "static/media/blueLemon.jpg": "/simply-aglazing/static/media/blueLemon.366ad78dd6c721335317.jpg",
     "index.html": "/simply-aglazing/index.html",
-    "main.a74b0f2c.css.map": "/simply-aglazing/static/css/main.a74b0f2c.css.map",
-    "main.94dda73d.js.map": "/simply-aglazing/static/js/main.94dda73d.js.map"
+    "main.34a55b21.css.map": "/simply-aglazing/static/css/main.34a55b21.css.map",
+    "main.66d824ef.js.map": "/simply-aglazing/static/js/main.66d824ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.a74b0f2c.css",
-    "static/js/main.94dda73d.js"
+    "static/css/main.34a55b21.css",
+    "static/js/main.66d824ef.js"
   ]
 }
