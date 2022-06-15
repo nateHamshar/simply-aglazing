@@ -5,7 +5,7 @@ function App() {
       <div className="landing">
         <h1 className='nameFirst'>Simply</h1>
         <h1 className='nameSecond'>A'glazing</h1>
-        <p className='slogan'>Donuts done right.</p>
+        <p className='slogan'>Donuts done right<span className="period">.</span></p>
       </div>
       <div className="border"></div>
       <div className="contentRight">
@@ -18,7 +18,7 @@ function App() {
         <div className="imgLeft">
           <img src={require("./images/germanChoc.jpg")} alt="donuts" className='images' />
         </div>
-        <h1 className="leftText">Homestyle</h1>
+        <h1 className="leftText">Homemade</h1>
       </div>
       <div className="contentRight">
         <div className="imgRight">
